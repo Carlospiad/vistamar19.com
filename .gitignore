@@ -1,5 +1,6 @@
 #Specific Files#
 ################
+.build
 config.json
 # Compiled source #
 ###################
