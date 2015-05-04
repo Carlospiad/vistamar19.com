@@ -5,7 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
 
-	
+
 
 	<!-- Stylesheets
 	============================================= -->
@@ -67,14 +67,10 @@
 					============================================= -->
 					<div class="top-links">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="faqs.html">FAQs</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="#">USD</a>
+							<li><a href="#">Language</a>
 								<ul>
-									<li><a href="#">EUR</a></li>
-									<li><a href="#">AUD</a></li>
-									<li><a href="#">GBP</a></li>
+									<li><a href="#">USD</a></li>
+									<li><a href="#">ESP</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -116,8 +112,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="{% static 'images/logo-dark.png'%}"><img src="{% static 'img/logo.png'%}" alt="Vista Mar Villa 19 Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="{% static 'images/logo-dark@2x.png'%}"><img src="{% static 'img/logo@2x.png'%}" alt="Vista Mar Vista 19 Logo"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="{% static 'img/logo-dark.png'%}"><img src="{% static 'img/logo.png'%}" alt="Vista Mar Villa 19 Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="{% static 'img/logo-dark@2x.png'%}"><img src="{% static 'img/logo@2x.png'%}" alt="Vista Mar Vista 19 Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -125,12 +121,12 @@
 					<nav id="primary-menu" class="style-4">
 
 						<ul>
-							<li class="current"><a href="index.html"><div><i class="icon-home2"></i>Home</div></a>	</li>
-							<li><a href="#"><div><i class="icon-plane"></i>Flights</div></a></li>
-							<li><a href="#"><div><i class="icon-building"></i>Hotels</div></a></li>
-							<li><a href="#"><div><i class="icon-gift"></i>Holidays</div></a></li>
-							<li><a href="#"><div><i class="icon-pencil2"></i>Blog</div></a></li>
-							<li><a href="#"><div><i class="icon-phone3"></i>1800 105 2541</div></a></li>
+							<li class="{% if_current_page '/index.html' 'current' '' %}"><a href="{% url '/index.html' %}"><div><i class="icon-home2"></i>Home</div></a>	</li>
+							<li class="{% if_current_page '/facilities.html' 'current' '' %}"><a href="{% url '/facilities.html' %}"><div><i class="icon-building"></i>Facilities</div></a></li>
+							<li class="{% if_current_page '/area.html' 'current' '' %}"><a href="{% url '/area.html' %}"><div><i class="icon-globe"></i>Area</div></a></li>
+							<li class="{% if_current_page '/tours.html' 'current' '' %}"><a href="{% url '/tours.html' %}"><div><i class="icon-rocket"></i>Tours</div></a></li>
+							<li class="{% if_current_page '/gallery.html' 'current' '' %}"><a href="{% url '/gallery.html' %}"><div><i class="icon-camera"></i>Gallery</div></a></li>
+							<li class="{% if_current_page '/rates.html' 'current' '' %}"><a href="{% url '/rates.html' %}"><div><i class="icon-dollar"></i>Rates</div></a></li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -141,241 +137,8 @@
 
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
-
-			<div class="fslider" data-speed="3000" data-pause="7500" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
-				<div class="flexslider">
-          <div class="slider-wrap">
-						<div class="slide full-screen force-full-screen" style="background: url('{% static '/static/img/vistamar_slider1.JPG'%}') center center; background-size: cover; height: 100% !important;"></div>
-            <div class="slide full-screen force-full-screen" style="background: url('{% static '/static/img/vistamar_slider2.JPG'%}') center center; background-size: cover; height: 100% !important;"></div>
-					</div>
-				</div>
-			</div>
-
-			<div id="travel-slider-overlay">
-
-				<div class="vertical-middle">
-
-					<div class="container clearfix">
-
-						<div class="tabs travel-organiser-tabs clearfix">
-
-							<ul class="tab-nav clearfix">
-								<li><a href="#tab-flights"><i class="icon-plane"></i><span class="hidden-xs">Flights</span></a></li>
-								<li><a href="#tab-hotels"><i class="icon-building"></i><span class="hidden-xs">Hotels</span></a></li>
-								<li><a href="#tab-flights-hotels"><span class="visible-xs"><i class="icon-plane"></i> + <i class="icon-building"></i></span><span class="hidden-xs">Flights + Hotels<span class="label label-danger">Save</span></span></a></li>
-								<li><a href="#tab-holidays"><i class="icon-gift"></i><span class="hidden-xs">Holidays</span></a></li>
-							</ul>
-
-							<div class="tab-container">
-
-								<div class="tab-content clearfix" id="tab-flights">
-									<div class="heading-block nobottomborder bottommargin-sm clearfix">
-										<h4 class="fleft">Book your Flights</h4>
-										<div class="btn-group fright">
-											<button type="button" class="btn btn-danger btn-sm bgcolor border-color">Domestic</button>
-											<button type="button" class="btn btn-default btn-sm">International</button>
-										</div>
-										<div class="clear"></div>
-									</div>
-									<form action="#" method="post" class="nobottommargin">
-										<div class="row">
-											<div class="col-sm-6 col-xs-12 bottommargin-sm">
-												<label for="">From</label>
-												<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
-											</div>
-											<div class="col-sm-6 col-xs-12 bottommargin-sm">
-												<label for="">To</label>
-												<input type="text" value="" class="sm-form-control" placeholder="Eg. New York, United States">
-											</div>
-											<div class="clear"></div>
-											<div class="input-daterange travel-date-group col-sm-9 bottommargin-sm">
-												<div class="row">
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Departure</label>
-														<input type="text" value="" class="sm-form-control tleft" name="start" placeholder="MM/DD/YYYY">
-													</div>
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Return</label>
-														<input type="text" value="" class="sm-form-control tleft" name="end" placeholder="MM/DD/YYYY">
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-3 bottommargin-sm">
-												<label for="">Adults</label>
-												<input type="number" min="1" max="10" value="" class="sm-form-control" name="end" placeholder="2">
-											</div>
-											<div class="col-sm-12">
-												<button class="button button-3d nomargin rightmargin-sm">Search Flights</button>
-												<a href="#" class="more-link fright" style="margin-top: 9px;">Advanced Search</a>
-											</div>
-										</div>
-									</form>
-								</div>
-								<div class="tab-content clearfix" id="tab-hotels">
-									<div class="heading-block nobottomborder bottommargin-sm clearfix">
-										<h4 class="fleft">Book your Hotels</h4>
-										<div class="btn-group fright">
-											<button type="button" class="btn btn-danger btn-sm bgcolor border-color">Domestic</button>
-											<button type="button" class="btn btn-default btn-sm">International</button>
-										</div>
-										<div class="clear"></div>
-									</div>
-									<form action="#" method="post" class="nobottommargin">
-										<div class="row">
-											<div class="col-sm-12 bottommargin-sm">
-												<label for="">City</label>
-												<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
-											</div>
-											<div class="input-daterange travel-date-group col-sm-9 bottommargin-sm">
-												<div class="row">
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Departure</label>
-														<input type="text" value="" class="sm-form-control tleft" name="start" placeholder="MM/DD/YYYY">
-													</div>
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Return</label>
-														<input type="text" value="" class="sm-form-control tleft" name="end" placeholder="MM/DD/YYYY">
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-3 bottommargin-sm">
-												<label for="">Rooms</label>
-												<input type="number" min="1" max="10" value="" class="sm-form-control" name="end" placeholder="2">
-											</div>
-											<div class="col-sm-12">
-												<button class="button button-3d nomargin rightmargin-sm">Search Hotels</button>
-												<a href="#" class="more-link fright" style="margin-top: 9px;">Popular Hotels</a>
-											</div>
-										</div>
-									</form>
-								</div>
-								<div class="tab-content clearfix" id="tab-flights-hotels">
-									<div class="heading-block nobottomborder bottommargin-sm clearfix">
-										<h4 class="fleft">Book Flights &amp; Hotels</h4>
-										<div class="btn-group fright">
-											<button type="button" class="btn btn-danger btn-sm bgcolor border-color">Domestic</button>
-											<button type="button" class="btn btn-default btn-sm">International</button>
-										</div>
-										<div class="clear"></div>
-									</div>
-									<form action="#" method="post" class="nobottommargin">
-										<div class="row">
-											<div class="col-sm-9 bottommargin-sm">
-												<div class="row">
-													<div class="col-sm-6 col-xs-6">
-														<label for="">From</label>
-														<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
-													</div>
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Destination</label>
-														<input type="text" value="" class="sm-form-control" placeholder="Eg. New York, United States">
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-3 bottommargin-sm">
-												<label for="">Adults</label>
-												<input type="number" min="1" max="10" value="" class="sm-form-control" name="end" placeholder="2">
-											</div>
-											<div class="input-daterange travel-date-group col-sm-9 bottommargin-sm">
-												<div class="row">
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Departure</label>
-														<input type="text" value="" class="sm-form-control tleft" name="start" placeholder="MM/DD/YYYY">
-													</div>
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Return</label>
-														<input type="text" value="" class="sm-form-control tleft" name="end" placeholder="MM/DD/YYYY">
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-3  bottommargin-sm">
-												<label for="">Rooms</label>
-												<input type="number" min="1" max="10" value="" class="sm-form-control" name="end" placeholder="2">
-											</div>
-											<div class="col-sm-12">
-												<button class="button button-3d nomargin rightmargin-sm">Search Flights + Hotels</button>
-												<a href="#" class="more-link fright" style="margin-top: 9px;">Holiday Packages</a>
-											</div>
-										</div>
-									</form>
-								</div>
-								<div class="tab-content clearfix" id="tab-holidays">
-									<div class="heading-block nobottomborder bottommargin-sm clearfix">
-										<h4>Search for Holiday Packages</h4>
-									</div>
-									<form action="#" method="post" class="nobottommargin">
-										<div class="row">
-											<div class="col-sm-6 col-xs-12 bottommargin-sm">
-												<label for="">From</label>
-												<input type="text" value="" class="sm-form-control" placeholder="Eg. Melbourne, Australia">
-											</div>
-											<div class="col-sm-6 col-xs-12 bottommargin-sm">
-												<label for="">Destination</label>
-												<input type="text" value="" class="sm-form-control" placeholder="Eg. Europe">
-											</div>
-											<div class="clear"></div>
-											<div class="col-sm-9 bottommargin-sm">
-												<div class="row">
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Month</label>
-														<select name="month" class="sm-form-control">
-															<option value="">-- Select Month --</option>
-															<option value="November 2014">November 2014</option>
-															<option value="December 2014">December 2014</option>
-															<option value="January 2015">January 2015</option>
-															<option value="February 2015">February 2015</option>
-															<option value="March 2015">March 2015</option>
-															<option value="April 2015">April 2015</option>
-															<option value="May 2015">May 2015</option>
-															<option value="June 2015">June 2015</option>
-														</select>
-													</div>
-													<div class="col-sm-6 col-xs-6">
-														<label for="">Budget</label>
-														<select name="budget" class="sm-form-control">
-															<option value="">-- Select Budget --</option>
-															<option value="November 2014">$99 to $199</option>
-															<option value="December 2014">$200 to $499</option>
-															<option value="January 2015">$500 to $999</option>
-															<option value="February 2015">$1000 to $1999</option>
-															<option value="March 2015">Above $2000</option>
-														</select>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-3 bottommargin-sm">
-												<label for="">Adults</label>
-												<input type="number" min="1" max="10" value="" class="sm-form-control" name="end" placeholder="2">
-											</div>
-											<div class="col-sm-12">
-												<button class="button button-3d nomargin rightmargin-sm">Search Flights</button>
-												<a href="#" class="more-link fright" style="margin-top: 9px;">Advanced Search</a>
-											</div>
-										</div>
-									</form>
-								</div>
-
-							</div>
-
-						</div>
-
-						<script>
-							$(function() {
-								$('.travel-date-group').datepicker({
-									autoclose: true,
-									startDate: "today"
-								});
-							});
-						</script>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</section>
+	  {% block slider %}
+		{% endblock %}
 
     {% block body %}
     {% endblock %}
