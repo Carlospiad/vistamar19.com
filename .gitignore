@@ -3,6 +3,8 @@
 .deploy
 .build
 config.json
+*.pyc
+
 # Compiled source #
 ###################
 *.com
