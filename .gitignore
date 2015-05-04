@@ -4,6 +4,10 @@
 .build
 config.json
 *.pyc
+__init__.pyc
+page_context.pyc
+static_optimizers.pyc
+
 
 # Compiled source #
 ###################
