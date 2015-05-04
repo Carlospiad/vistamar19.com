@@ -1,3 +1,6 @@
+#slider .fslider, #slider .fslider .flexslider, #slider .fslider .slider-wrap, #slider .fslider .slide, #slider .fslider .slide > a, #slider .fslider .slide > img, #slider .fslider .slide > a > img{
+  height: 100% !important;
+}
 .tabs.travel-organiser-tabs {
   margin: -37px;
 }
@@ -7,7 +10,6 @@
 
 #travel-slider-overlay {
   position: relative;
-  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
