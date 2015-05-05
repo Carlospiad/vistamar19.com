@@ -1,7 +1,7 @@
 #Specific Files#
 ################
-.deploy
-.build
+.deploy/
+.build/
 config.json
 *.pyc
 __init__.pyc
