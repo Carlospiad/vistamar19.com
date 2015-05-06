@@ -6,42 +6,27 @@
 
 {% block slider %}
 <section id="slider" class="slider-parallax swiper_wrapper boxed-slider clearfix">
-
   <div class="fslider" data-speed="3000" data-pause="7500" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
     <div class="flexslider">
       <div class="slider-wrap">
         <div class="slide full-screen force-full-screen" style="background: url('{% static '/static/img/vistamar-golf-course.jpg'%}') center center; background-size: cover; height: 100% !important;">
           <div class="vertical-middle">
-            <div class="heading-block center nobottomborder dark hidden-xs">
-                <h1 data-animate="fadeInUp">Tons of activities at your disposal!</h1>
+            <div class="heading-block center nobottomborder dark overlay hidden-xs">
+              <h1 data-animate="fadeInUp">Activities around the house!</h1>
+              <span data-animate="fadeInUp" data-delay="300">Some of the activities that you and your friends can practice in the exclusive ambiance of VistaMar</span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div id="travel-slider-overlay">
-    <div class="vertical-middle custom-low">
-        <form action="#" method="post" role="form" class="landing-wide-form clearfix">
-          <div class="col_four_fifth nobottommargin">
-              <div class="col_one_third nobottommargin">
-                  <input type="text" class="form-control input-lg" value="" placeholder="Your Name">
-              </div>
-              <div class="col_one_third nobottommargin">
-                  <input type="email" class="form-control input-lg" value="" placeholder="Your Email">
-              </div>
-              <div class="col_one_third col_last nobottommargin">
-                  <input type="tel" class="form-control input-lg" value="" placeholder="Your Phone #">
-              </div>
-          </div>
-          <div class="col_one_fifth col_last nobottommargin">
-              <button class="btn btn-lg btn-block nomargin" value="submit" type="submit" style="">Contact Us</button>
-          </div>
-        </form>
+  <div data-height-xxs="250" id="travel-slider-overlay">
+    <div class="vertical-middle">
+      <div class="heading-block center nobottomborder dark visible-xs">
+        <h1 >Texto de prueba para portrait images</h1>
+      </div>
     </div>
   </div>
-
 </section>
 {% endblock %}
 
@@ -51,7 +36,7 @@
 <section id="page-title">
 
     <div class="container clearfix">
-        <h1>Services</h1>
+        <h1>Area</h1>
         <span>We provide Amazing Solutions</span>
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
