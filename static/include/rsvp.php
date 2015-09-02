@@ -16,8 +16,8 @@ if( isset( $_POST['wedding-rsvp-submit'] ) AND $_POST['wedding-rsvp-submit'] == 
 
         $botcheck = $_POST['wedding-rsvp-botcheck'];
 
-        $toemail = ''; // Your Email Address
-        $toname = ''; // Your Name
+        $toemail = 'username@email.com'; // Your Email Address
+        $toname = 'Your Name'; // Your Name
 
         if( $botcheck == '' ) {
 

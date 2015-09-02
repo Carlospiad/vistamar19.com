@@ -6,12 +6,12 @@
 
 @font-face {
 	font-family: 'Arca Majora';
-	src: url('{% static '/static/css/fonts/arca-heavy-webfont.eot'%}');
-	src: url('fonts/arca-heavy-webfont.eot?#iefix'%}') format('embedded-opentype'),
-		 url('{% static '/static/css/fonts/arca-heavy-webfont.woff2'%}') format('woff2'),
-		 url('{% static '/static/css/fonts/arca-heavy-webfont.woff'%}') format('woff'),
-		 url('{% static '/static/css/fonts/arca-heavy-webfont.ttf'%}') format('truetype'),
-		 url('{% static '/static/css/fonts/arca-heavy-webfont.svg#arca_majoraheavy'%}') format('svg');
+	src: url('fonts/arca-heavy-webfont.eot');
+	src: url('fonts/arca-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/arca-heavy-webfont.woff2') format('woff2'),
+		 url('fonts/arca-heavy-webfont.woff') format('woff'),
+		 url('fonts/arca-heavy-webfont.ttf') format('truetype'),
+		 url('fonts/arca-heavy-webfont.svg#arca_majoraheavy') format('svg');
 	font-weight: normal;
 	font-style: normal;
 
