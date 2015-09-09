@@ -7703,7 +7703,7 @@ body:not(.device-touch) .button.button-full strong {
 	padding: 2px;
 	z-index: -1;
 	box-shadow: none;
-	background-image: url('images/icons/iconalt.svg');
+	background-image: url("{% static '/static/images/icons/iconalt.svg' %}" );
 	background-position: center center;
 	background-size: 100% 100%;
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
@@ -7992,7 +7992,7 @@ body:not(.device-touch) .social-icon {
 }
 
 .i-alt {
-	background-image: url('images/icons/iconalt.svg');
+	background-image: url("{% static '/static/images/icons/iconalt.svg' %}");
 	background-position: center center;
 	background-size: 100% 100%;
 }
@@ -12923,4 +12923,3 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-
