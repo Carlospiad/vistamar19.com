@@ -76,7 +76,7 @@ body:not(.device-touch) .social-icon {
 }
 
 .i-alt {
-	background-image: url('../../../images/icons/iconalt.svg');
+	background-image: url("{% static '/static/images/icons/iconalt.svg' %}");
 	background-position: center center;
 	background-size: 100% 100%;
 }
@@ -84,7 +84,7 @@ body:not(.device-touch) .social-icon {
 
 .i-rounded:hover,
 .i-circled:hover {
-	background-color: #1ABC9C;
+	background-color: #37aae1;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	box-shadow: 0 0 0 rgba(0,0,0,0.2);
@@ -225,7 +225,7 @@ body:not(.device-touch) .social-icon {
 	top: 0;
 	left: 0;
 	text-align: center;
-	background: rgba(0,0,0,0.2) url('../../../images/grid.png') repeat;
+	background: rgba(0,0,0,0.2) url("{% static '/static/images/grid.png'%}") repeat;
 }
 
 .i-overlay img,
