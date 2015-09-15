@@ -5,47 +5,80 @@
 {% endblock %}
 
 {% block slider %}
-<section id="slider" class="slider-parallax swiper_wrapper boxed-slider clearfix">
-
+<section id="slider" class="with-header swiper_wrapper full-screen clearfix">
   <div class="fslider" data-speed="3000" data-pause="7500" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
     <div class="flexslider">
       <div class="slider-wrap">
         <div class="slide full-screen force-full-screen" style="background: url('{% static '/static/img/vistamar-helicopter-view.jpg'%}') center center; background-size: cover; height: 100% !important;">
           <div class="vertical-middle">
             <div class="heading-block center nobottomborder dark hidden-xs">
-                <h1 data-animate="fadeInUp">Tons of activities at your disposal!</h1>
+                <h1 data-animate="fadeInUp">La más hermosa vista y brisa marina para compartir y disfrutar!</h1>
+
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="travel-slider-overlay">
-    <div class="vertical-middle custom-low">
-        <form action="#" method="post" role="form" class="landing-wide-form clearfix">
-          <div class="col_four_fifth nobottommargin">
-              <div class="col_one_third nobottommargin">
-                  <input type="text" class="form-control input-lg" value="" placeholder="Your Name">
-              </div>
-              <div class="col_one_third nobottommargin">
-                  <input type="email" class="form-control input-lg" value="" placeholder="Your Email">
-              </div>
-              <div class="col_one_third col_last nobottommargin">
-                  <input type="tel" class="form-control input-lg" value="" placeholder="Your Phone #">
-              </div>
-          </div>
-          <div class="col_one_fifth col_last nobottommargin">
-              <button class="btn btn-lg btn-block nomargin" value="submit" type="submit" style="">Contact Us</button>
-          </div>
-        </form>
-    </div>
-  </div>
+
+
 
 </section>
-
 {% endblock %}
 
 {% block body %}
+<div class="section">
 
+    <div class="container clearfix">
+
+        <div class="heading-block center">
+            <h3>La más hermosa vista y brisa marina para compartir y disfrutar!</h3>
+            <span></span>
+        </div>
+
+        <div class="col_full">
+
+            <img data-animate="fadeIn" class="aligncenter" src="{% static '/static/images/services/macbook.png'%}" alt="Macbook">
+
+        </div>
+
+        <div class="col_one_third nobottommargin">
+
+            <div class="feature-box fbox-plain">
+                <div class="fbox-icon">
+                    <a href="#"><i class="i-alt">1.</i></a>
+                </div>
+                <h3>Solo a una hora de la ciudad.</h3>
+                <p>En la Costa Pacífica Panameña, en el Distrito de San Carlos, se encuentra ubicada la Villa 19 en Vista Mar.</p>
+            </div>
+
+        </div>
+
+        <div class="col_one_third nobottommargin">
+
+            <div class="feature-box fbox-plain">
+                <div class="fbox-icon">
+                    <a href="#"><i class="i-alt">2.</i></a>
+                </div>
+                <h3>Exclusiva residencia de playa </h3>
+                <p>Usted y su familia podrán disfrutar una experiencia única e inolvidable</p>
+            </div>
+
+        </div>
+
+        <div class="col_one_third nobottommargin col_last">
+
+            <div class="feature-box fbox-plain">
+                <div class="fbox-icon">
+                    <a href="#"><i class="i-alt">3.</i></a>
+                </div>
+                <h4>Varios amplios espacios para todos.</h4>
+                <p>Cinco cómodas habitaciones con A/C y baño privado; estudio con área de bar; amplias
+
+terrazas; área de barbacoa y piscina infinity frente al mar; cancha de volibol de playa y de raquetbol, rancho con hamacas y jardines tropicales.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 {% endblock %}
