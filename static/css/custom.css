@@ -1,0 +1,8 @@
+.iconlist {
+    font-size: 22px
+
+  }
+  .iconlist { line-height: 200%; }
+
+
+.heading-block ~ p:not(.lead) { font-size: 20px; }
