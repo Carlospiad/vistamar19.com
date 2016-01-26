@@ -24,3 +24,8 @@ h5 {
 .bold-header {
   color:white;
 }
+#content {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
