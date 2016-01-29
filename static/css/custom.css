@@ -29,3 +29,25 @@ h5 {
     overflow: hidden;
     background-color: #fff;
 }
+
+#page-title.page-title-parallax {
+    background-color: #337ab7;
+  }
+
+  element.style {
+      padding: 120px 0px;
+      background-image: url("../static/img/hikers.jpg");
+      background-position: 50% -31.5px;
+  }
+
+  .line, .double-line {
+      clear: both;
+      position: relative;
+      width: 70%;
+      /* padding-top: 60px; */
+      border-top: 1px solid #888;
+      /* float: right; */
+      left: 15%;
+      /* background: #fff; */
+      /* padding-bottom: 60px; */
+  }

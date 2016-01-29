@@ -8,6 +8,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}" type="text/css" />
 	<link rel="stylesheet" href="{% static '/static/css/style.css'%}" type="text/css" />
 	<link rel="stylesheet" href="{% static '/static/css/dark.css'%}" type="text/css" />
@@ -30,7 +31,7 @@
 
 	<!-- Custom CSS
 	============================================= -->
-	<link rel="stylesheet" href="{% static 'css/custom.css'%}" type="text/css" />
+	<link rel="stylesheet" href="{% static '/static/css/custom.css'%}" type="text/css" />
 
 	<!-- External JavaScripts
 	============================================= -->
@@ -122,6 +123,7 @@
 
 						<ul>
 							<li class="{% if_current_page '/index.html' 'current' '' %}"><a href="{% url '/index.html' %}"><div><i class="icon-home2"></i>Home</div></a>	</li>
+					
 							<li class="{% if_current_page '/activities.html' 'current' '' %}"><a href="{% url '/activities.html' %}"><div><i class="icon-globe"></i>Activities</div></a></li>
 							<li class="{% if_current_page '/tours.html' 'current' '' %}"><a href="{% url '/tours.html' %}"><div><i class="icon-rocket"></i>Tours</div></a></li>
 							<li class="{% if_current_page '/gallery.html' 'current' '' %}"><a href="{% url '/gallery.html' %}"><div><i class="icon-camera"></i>Gallery</div></a></li>
